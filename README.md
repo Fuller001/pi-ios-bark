@@ -14,8 +14,6 @@
 
 ## 安装
 
-### 方式一：从 GitHub 安装为 Pi 包
-
 ```bash
 pi install https://github.com/Fuller001/pi-ios-bark
 ```
@@ -31,19 +29,6 @@ pi install https://github.com/Fuller001/pi-ios-bark
 > ```bash
 > pi remove npm:@herbertgao/pi-bark
 > ```
-
-### 方式二：手动安装，避免被 `pi update` 覆盖
-
-直接把扩展文件放到 Pi 的全局扩展目录：
-
-```bash
-mkdir -p ~/.pi/agent/extensions/pi-ios-bark
-cp src/index.ts ~/.pi/agent/extensions/pi-ios-bark/index.ts
-```
-
-然后在 Pi 中执行 `/reload`。
-
-这种方式不会作为 npm 或 Git 包被 Pi 管理，因此 `pi update` 不会覆盖它；以后如需更新，需要手动从本仓库复制新的 `src/index.ts`。
 
 ## 配置 Bark
 
