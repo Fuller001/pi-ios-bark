@@ -1,0 +1,46 @@
+{
+  "name": "pi-ios-bark",
+  "version": "0.1.0",
+  "description": "Manually enabled Bark notifications for Pi sessions.",
+  "keywords": [
+    "bark",
+    "ios",
+    "notifications",
+    "pi-extension",
+    "pi-package"
+  ],
+  "homepage": "https://github.com/Fuller001/pi-ios-bark#readme",
+  "bugs": {
+    "url": "https://github.com/Fuller001/pi-ios-bark/issues"
+  },
+  "license": "MIT",
+  "author": "Fuller001",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fuller001/pi-ios-bark.git"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^24",
+    "typescript": "^5.9.3"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "^0.84.0"
+  },
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "pi": {
+    "extensions": [
+      "./src/index.ts"
+    ]
+  }
+}
